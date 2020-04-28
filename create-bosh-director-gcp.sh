@@ -3,7 +3,9 @@
 # Clone Director templates
 # Give me open-source bosh director on GCP
 
-# Edit these to match your zone's default subnet's
+# Edit these to match your zone's default 
+# For example, us-central1 
+#   $ gcloud compute networks subnets list|grep us-central1
 SUBNET_CIDR='10.128.0.0/20'
 SUBNET_GW='10.128.0.1'
 BOSH_IP='10.128.0.10'
